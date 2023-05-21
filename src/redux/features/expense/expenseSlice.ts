@@ -9,7 +9,7 @@ export const expenseApi = createApi({
   tagTypes: ["Expenses"],
   endpoints: (builder) => ({
     // get all expenses
-    getExpenses: builder.query<IExpense[], void>({
+    getExpenses: builder.query<IExpense[], "expensesList">({
       query: () => ({
         url: "/expenses",
         validateStatus: (response, result) => {
