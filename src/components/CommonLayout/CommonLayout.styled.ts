@@ -14,4 +14,5 @@ export const LayoutContainer = styled(Container)`
   width: 414px;
   margin: 0;
   background-color: #ffffff;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.09);
 `;

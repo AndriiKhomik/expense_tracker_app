@@ -1,7 +1,9 @@
 import React from "react";
-import { AppBar, Container, Toolbar, Typography, Avatar } from "@mui/material";
-import AdbIcon from "@mui/icons-material/Adb";
+import { AppBar, Toolbar, Avatar } from "@mui/material";
 import { Box } from "@mui/system";
+import avatar from "./avatar.png";
+import BellIcon from "../../svg/BellIcon";
+import PageTitle from "../PageTitle";
 
 const Header = () => {
   return (
@@ -12,17 +14,25 @@ const Header = () => {
           borderTopLeftRadius: "24px",
           borderTopRightRadius: "24px",
           backgroundColor: "#ffffff",
+          height: "115px",
+          justifyContent: "center",
+          padding: "3px 3px 0 3px",
+          boxShadow: "0px 0px 4px rgba(0, 0, 0, 0.09)",
         }}
       >
         <Toolbar>
-          <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ flexGrow: 1, color: "red" }}
-          >
-            Photos
-          </Typography>
+          <Avatar
+            sx={{
+              borderRadius: "6px",
+              backgroundColor: "#9B63FC",
+              width: "43px",
+              height: "43px",
+            }}
+            alt="Remy Sharp"
+            src={avatar}
+          />
+          <PageTitle />
+          <BellIcon />
         </Toolbar>
       </AppBar>
     </Box>

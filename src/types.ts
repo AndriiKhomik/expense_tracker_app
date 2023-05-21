@@ -7,3 +7,8 @@ export type IExpense = {
   expenseDate: Date;
   paymentMethod: string;
 };
+
+export type Pages = {
+  page: string;
+  url: string;
+};
